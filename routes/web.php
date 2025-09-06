@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\AdminLoginController;
+
 
 Route::get('/', function () {
     return view('Landing');
@@ -44,5 +46,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+Route::get('/admin-login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
+Route::post('/admin-login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
+Route::post('/admin-logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
 
 require __DIR__.'/auth.php';
