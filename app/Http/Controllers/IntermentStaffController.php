@@ -27,8 +27,10 @@ class IntermentStaffController extends Controller
             'email' => $request->email,
             'phonenumber' => $request->phonenumber,
             'password' => Hash::make($request->password),
-            'role' => 'interment_staff', // set role here
+            'role' => 'interment_staff',   // role
+            'status' => 'Active',          // status
         ]);
+
 
         return redirect('/users')->with('success', 'Interment Staff account created successfully!');
     }
@@ -38,4 +40,38 @@ class IntermentStaffController extends Controller
         $staffs = User::where('role', 'interment_staff')->get(); // only interment staff
         return view('users', compact('staffs'));
     }
+
+
+    // IntermentStaffController.php
+    public function toggleStatus($id)
+    {
+        $user = User::findOrFail($id);
+
+        // Toggle the status
+        $user->status = $user->status === 'Active' ? 'Deactivated' : 'Active';
+        $user->save();
+
+
+        return redirect()->back()->with('success', 'User status updated successfully!');
+    }
+
+
+    // !! FUNCTION FOR EDIT UPDATE USER MANAGEMENT
+    public function update(Request $request, $id)
+{
+    $user = User::findOrFail($id);
+
+    $user->update([
+        'firstname' => $request->firstname,
+        'middlename' => $request->middlename,
+        'lastname' => $request->lastname,
+        'email' => $request->email,
+        'phonenumber' => $request->phonenumber,
+        'role' => $request->role,
+    ]);
+
+    return redirect()->back()->with('success', 'User updated successfully!');
+}
+
+
 }

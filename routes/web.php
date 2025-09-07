@@ -4,7 +4,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AdminLoginController;
 
+
 use App\Http\Controllers\IntermentStaffController;
+use App\Models\IntermentStaff;
+
 Route::get('/', function () {
     return view('Landing');
 });
@@ -49,8 +52,16 @@ Route::middleware('auth')->group(function () {
 
 // CREATING INTERMENT STAFF ACCOUNT ROUTE
 Route::post('/interment-staff/store', [IntermentStaffController::class, 'store'])->name('interment-staff.store');
-
 Route::get('/users', [IntermentStaffController::class, 'index'])->name('users');
+
+// !! TOGGLE USER STATUS FOR USER MANAGEMENT AREA
+// Route::get('/users/toggle-status/{id}', [IntermentStaffController::class, 'toggleStatus'])->name('users.toggleStatus');
+Route::patch('/users/{id}/toggle-status', [IntermentStaffController::class, 'toggleStatus'])->name('users.toggleStatus');
+
+// !! ROUTE FOR USER MANAGEMENT EDIT BUTTON
+Route::patch('/users/{id}', [IntermentStaffController::class, 'update'])->name('users.update');
+
+
 
 Route::get('/admin-login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin-login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
