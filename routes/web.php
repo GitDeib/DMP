@@ -36,6 +36,12 @@ Route::get('/Map', function () {
     return view('Map'); // Make sure the file is resources/views/PublicMap.blade.php
 })->name('Map');
 
+
+Route::get('/navbar', function () {
+    return view('layouts.navigation'); // Make sure the file is resources/views/PublicMap.blade.php
+})->name('navigation');
+
+
 Route::get('/Admin', function () {
     return view('Admin'); // Make sure the file is resources/views/PublicMap.blade.php
 })->name('Admin');
