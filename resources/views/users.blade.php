@@ -51,154 +51,60 @@
 
         <!-- Table -->
         <table class="w-full text-sm text-left text-gray-500">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
-                <tr>
-                    <th scope="col" class="p-4"><input type="checkbox" class="w-4 h-4"></th>
-                    <th scope="col" class="px-6 py-3">Name</th>
-                    <th scope="col" class="px-6 py-3">Position</th>
-                    <th scope="col" class="px-6 py-3">Status</th>
-                    <th scope="col" class="px-6 py-3">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Dummy Users -->
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Neil Sims</div>
-                            <div class="font-normal text-gray-500">neil.sims@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">React Developer</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 2">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Bonnie Green</div>
-                            <div class="font-normal text-gray-500">bonnie@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">Designer</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/3.jpg" alt="User 3">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Jese Leos</div>
-                            <div class="font-normal text-gray-500">jese@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">Vue JS Developer</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/4.jpg" alt="User 4">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Leslie Livingston</div>
-                            <div class="font-normal text-gray-500">leslie@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">SEO Specialist</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Offline</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/5.jpg" alt="User 5">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Thomas Lean</div>
-                            <div class="font-normal text-gray-500">thomas@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">UI/UX Engineer</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <!-- Add 5 more dummy users similarly -->
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/5.jpg" alt="User 6">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Anna Bell</div>
-                            <div class="font-normal text-gray-500">anna@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">Backend Developer</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/6.jpg" alt="User 7">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Mark Twain</div>
-                            <div class="font-normal text-gray-500">mark@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">Project Manager</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Offline</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/6.jpg" alt="User 8">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Mary Jane</div>
-                            <div class="font-normal text-gray-500">mary@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">QA Engineer</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/men/7.jpg" alt="User 9">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">John Doe</div>
-                            <div class="font-normal text-gray-500">john@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">Intern</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div> Offline</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-                <tr class="bg-white hover:bg-gray-50">
-                    <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
-                    <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
-                        <img class="w-10 h-10 rounded-full" src="https://randomuser.me/api/portraits/women/7.jpg" alt="User 10">
-                        <div class="ps-3">
-                            <div class="text-base font-semibold">Olivia Smith</div>
-                            <div class="font-normal text-gray-500">olivia@example.com</div>
-                        </div>
-                    </th>
-                    <td class="px-6 py-4">Product Owner</td>
-                    <td class="px-6 py-4 flex items-center"><div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online</td>
-                    <td class="px-6 py-4"><a href="#" class="text-blue-600 hover:underline">Edit user</a></td>
-                </tr>
-            </tbody>
-        </table>
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+        <tr>
+            <th scope="col" class="p-4"><input type="checkbox" class="w-4 h-4"></th>
+            <th scope="col" class="px-6 py-3">Name</th>
+            <th scope="col" class="px-6 py-3">Email</th>
+            <th scope="col" class="px-6 py-3">Phone Number</th>
+            <th scope="col" class="px-6 py-3">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($staffs as $staff)
+            <tr class="bg-white border-b hover:bg-gray-50">
+                <td class="w-4 p-4"><input type="checkbox" class="w-4 h-4"></td>
+                <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900">
+                    <img class="w-10 h-10 rounded-full"
+                        src="https://ui-avatars.com/api/?name={{ urlencode($staff->firstname . ' ' . $staff->lastname) }}"
+                        alt="{{ $staff->firstname }}">
+                    <div class="ps-3">
+                        <div class="text-base font-semibold">{{ $staff->firstname }} {{ $staff->lastname }}</div>
+                    </div>
+                </th>
+                <td class="px-6 py-4">{{ $staff->email }}</td>
+                <td class="px-6 py-4">{{ $staff->phonenumber }}</td>
+                <td class="px-6 py-4">
+                    <a href="#" class="text-blue-600 hover:underline">Edit user</a>
+                </td>
+            </tr>
+        @endforeach
+    </tbody>
+</table>
+
     </div>
 </div>
 
 {{-- !! CREATE ACCOUNT MODAL --}}
+
+@if(session('success'))
+<div id="success-toast" class="fixed bottom-5 right-5 z-50 flex items-center w-full max-w-xs p-4 mb-4 text-green-800 bg-green-200 rounded-lg shadow-lg dark:text-green-400 dark:bg-green-800" role="alert">
+    <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+    </svg>
+    <div class="text-sm font-normal">
+        {{ session('success') }}
+    </div>
+    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-green-200 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-300 inline-flex h-8 w-8 dark:bg-green-800 dark:text-green-400 dark:hover:bg-green-700" aria-label="Close" onclick="document.getElementById('success-toast').remove();">
+        <span class="sr-only">Close</span>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+    </button>
+</div>
+@endif
+
+
 <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative p-4 w-full max-w-md max-h-full">
         <!-- Modal content -->
@@ -206,7 +112,7 @@
             <!-- Modal header -->
             <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                    Create Interment Staff
+                    Create Interment Staff Account
                 </h3>
                 <button type="button" class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="authentication-modal">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -217,7 +123,14 @@
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5">
-                <form class="space-y-4" action="#" method="POST">
+
+
+
+
+
+
+               <form class="space-y-4" action="{{ route('interment-staff.store') }}" method="POST">
+    @csrf
                     <div>
                         <label for="firstname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
                         <input type="text" name="firstname" id="firstname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="John" required />
@@ -250,5 +163,41 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+<script>
+    // Auto hide after 4 seconds
+    setTimeout(() => {
+        const toast = document.getElementById('success-toast');
+        if(toast) toast.remove();
+    }, 4000);
+
+   const searchInput = document.getElementById('table-search-users');
+const table = document.querySelector('table'); // simpler selector
+const rows = table.querySelectorAll('tbody tr');
+
+searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+
+    rows.forEach(row => {
+        // Name is in the first <th>
+        const nameCell = row.querySelector('th div div');
+        const name = nameCell ? nameCell.textContent.toLowerCase() : '';
+
+        // Email is in the 2nd <td>
+        const emailCell = row.querySelector('td:nth-of-type(1) + td'); 
+        const email = emailCell ? emailCell.textContent.toLowerCase() : '';
+
+        // Phone is in the next <td>
+        const phoneCell = row.querySelector('td:nth-of-type(2) + td'); 
+        const phone = phoneCell ? phoneCell.textContent.toLowerCase() : '';
+
+        // Show row if any matches
+        if(name.includes(query) || email.includes(query) || phone.includes(query)) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+</script>
 </body>
 </html>
