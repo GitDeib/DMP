@@ -38,7 +38,7 @@
                 </p>
                 <p class="text-sm md:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
                     Whether you’re planning ahead or securing a resting place for your loved ones,
-                    our team is here to assist you every step of the way. Choose peace of mind today.
+                    our team is here to assist you every step of the way. Choose peace of mind today.  
                 </p>
 
                 <!-- Buttons -->

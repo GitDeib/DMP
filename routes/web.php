@@ -74,6 +74,12 @@ Route::get('/Landingpage', function () {
     return view('Landingpage'); // Make sure the file is resources/views/PublicMap.blade.php
 })->name('Landingpage');
 
+// ! ROUTE FOR NEW LOGIN UI PAGE
+
+Route::get('/Loginpage', function () {
+    return view('Loginpage'); // Make sure the file is resources/views/PublicMap.blade.php
+})->name('Loginpage');
+
 
 Route::get('/admin-login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin-login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
