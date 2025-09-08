@@ -68,6 +68,12 @@ Route::patch('/users/{id}/toggle-status', [IntermentStaffController::class, 'tog
 Route::patch('/users/{id}', [IntermentStaffController::class, 'update'])->name('users.update');
 
 
+// !! ROUTE FOR NEW LANDING PAGE
+
+Route::get('/Landingpage', function () {
+    return view('Landingpage'); // Make sure the file is resources/views/PublicMap.blade.php
+})->name('Landingpage');
+
 
 Route::get('/admin-login', [AdminLoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/admin-login', [AdminLoginController::class, 'login'])->name('admin.login.submit');
